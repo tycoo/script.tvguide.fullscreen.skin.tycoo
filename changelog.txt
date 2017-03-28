@@ -1,3 +1,7 @@
+version 0.0.4
+- OSD update
+- changed timebar
+
 version 0.0.2
 - click to install
 
