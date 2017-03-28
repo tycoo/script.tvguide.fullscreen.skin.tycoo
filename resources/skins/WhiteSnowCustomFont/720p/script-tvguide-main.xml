@@ -119,6 +119,29 @@
             <visible>false</visible>
         </control>
 
+        <control type="image" id="7027">
+            <description>Program logo / Source logo scale</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <aspectratio align="center">keep</aspectratio>
+            <align>center</align>
+            <aligny>top</aligny>
+            <fadetime>50</fadetime>
+            <visible></visible>
+        </control>
+        <control type="image">
+            <description>Program logo overlay texture</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <aspectratio>stretch</aspectratio>
+            <texture>whitetrans45.png</texture>
+            <fadetime>50</fadetime>
+            <visible>!StringCompare(Control.GetLabel(7027),)</visible>
+        </control>
         <control type="image">
             <description>blackout on play</description>
             <posx>0</posx>
@@ -1658,7 +1681,7 @@
                     <description>marker for program image box</description>
                     <texture>boxmarker.png</texture>
                     <visible>false</visible>
-                </control> 
+                </control>
 
                 <control type="image">
                     <description>Program image fallback custom</description>
@@ -1668,12 +1691,11 @@
                     <height>190</height>
                     <aspectratio align="left">keep</aspectratio>
                     <aligny>top</aligny>
-                    <fadetime>50</fadetime>
                     <texture>TV_testcard.png</texture>
-                    <visible>StringCompare(Control.GetLabel(7027),)+StringCompare(Control.GetLabel(7023),)</visible>
+                    <visible>StringCompare(Control.GetLabel(7023),)</visible>
                 </control>
                 <control type="image" id="7023">
-                    <description>Program logo / Source logo top right</description>
+                    <description>PIP Program/logo image</description>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>150</width>
@@ -1681,27 +1703,16 @@
                     <aspectratio align="left">keep</aspectratio>
                     <aligny>top</aligny>
                     <fadetime>50</fadetime>
-                    <visible>![Player.HasMedia|Control.IsVisible(5000)]</visible>
-                </control>
-                <control type="image" id="7027">
-                    <description>Program logo / Source logo scale</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>150</width>
-                    <height>190</height>
-                    <aspectratio align="left">keep</aspectratio>
-                    <aligny>top</aligny>
-                    <fadetime>50</fadetime>
-                    <visible>![Player.HasMedia|Control.IsVisible(5000)]</visible>
+                    <visible></visible>
                 </control>
                 <control type="label" id="5002">
                     <description>visibility marker for pip</description>
                 </control>
                 <control type="videowindow">
-                    <description>video window</description>
-                    <posx>0</posx>
+                    <description>Main PIP video window</description>
+                    <posx>-18</posx>
                     <posy>0</posy>
-                    <width>150</width>
+                    <width>176</width>
                     <height>190</height>
                     <aspectratio align="left">keep</aspectratio>
                     <aligny>top</aligny>
