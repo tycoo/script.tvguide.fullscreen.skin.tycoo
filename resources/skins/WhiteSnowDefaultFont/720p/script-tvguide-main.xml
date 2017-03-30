@@ -110,38 +110,14 @@
             <width>1280</width>
             <height>720</height>
             <colordiffuse>white</colordiffuse>
-            <texture>white_snow.png</texture>
             <aspectratio>stretch</aspectratio>
             <align>center</align>
             <aligny>center</aligny>
             <animation type="Conditional" condition="!Control.IsVisible(5000)"><effect type="fade" end="100" center="1250,690" time="200"/></animation>
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <visible>false</visible>
+            <visible>true</visible>
         </control>
 
-        <control type="image" id="7027">
-            <description>Program logo / Source logo scale</description>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1280</width>
-            <height>720</height>
-            <aspectratio align="center">keep</aspectratio>
-            <align>center</align>
-            <aligny>top</aligny>
-            <fadetime>50</fadetime>
-            <visible></visible>
-        </control>
-        <control type="image">
-            <description>Program logo overlay texture</description>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1280</width>
-            <height>720</height>
-            <aspectratio>stretch</aspectratio>
-            <texture>whitetrans45.png</texture>
-            <fadetime>50</fadetime>
-            <visible>!StringCompare(Control.GetLabel(7027),)</visible>
-        </control>
         <control type="image">
             <description>blackout on play</description>
             <posx>0</posx>
@@ -483,7 +459,7 @@
                     <visible>Control.IsVisible(4010)|Control.IsVisible(4110)</visible>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <texture></texture>
+                    <texture>black-back.png</texture>
                 </control>
                 <control type="image" id="4211">
                     <description>2nd channel</description>
@@ -495,7 +471,7 @@
                     <visible>Control.IsVisible(4011)|Control.IsVisible(4111)</visible>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <texture></texture>
+                    <texture>black-back.png</texture>
                 </control>
                 <control type="image" id="4212">
                     <description>3rd channel</description>
@@ -1671,9 +1647,9 @@
 <!--             # Program Image Box / PIP # -->
             <control type="group">
                 <description>Program Image Box / PIP</description>
-                <posx>20</posx>
+                <posx>14</posx>
                 <posy>48</posy>
-                <width>186</width>
+                <width>154</width>
                 <height>156</height>
                 <visible>!Control.IsVisible(5000)</visible>
 
@@ -1687,30 +1663,44 @@
                     <description>Program image fallback custom</description>
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>150</width>
+                    <width>154</width>
                     <height>190</height>
-                    <aspectratio align="left">keep</aspectratio>
-                    <aligny>top</aligny>
-                    <texture>TV_testcard.png</texture>
-                    <visible>StringCompare(Control.GetLabel(7023),)</visible>
-                </control>
-                <control type="image" id="7023">
-                    <description>PIP Program/logo image</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>150</width>
-                    <height>190</height>
-                    <aspectratio align="left">keep</aspectratio>
+                    <aspectratio align="center">keep</aspectratio>
                     <aligny>top</aligny>
                     <fadetime>50</fadetime>
-                    <visible></visible>
+                    <texture>TV_testcard.png</texture>
+                    <visible>StringCompare(Control.GetLabel(7023),)+StringCompare(Control.GetLabel(7027),)</visible>
+                </control>
+                <control type="image" id="7023">
+                    <description>PIP program/logo image</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>154</width>
+                    <height>190</height>
+                    <aspectratio align="center">keep</aspectratio>
+                    <aligny>top</aligny>
+                    <fadetime>50</fadetime>
+                    <texture>-</texture>
+                    <visible>true</visible>
+                </control>
+                <control type="image" id="7027">
+                    <description>PIP program/logo image scale</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>154</width>
+                    <height>190</height>
+                    <aspectratio align="center">scale</aspectratio>
+                    <aligny>top</aligny>
+                    <fadetime>50</fadetime>
+                    <texture>-</texture>
+                    <visible>true</visible>
                 </control>
                 <control type="label" id="5002">
                     <description>visibility marker for pip</description>
                 </control>
                 <control type="videowindow">
                     <description>Main PIP video window</description>
-                    <posx>-18</posx>
+                    <posx>-12</posx>
                     <posy>0</posy>
                     <width>176</width>
                     <height>190</height>
