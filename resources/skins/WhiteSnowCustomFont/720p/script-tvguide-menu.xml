@@ -647,6 +647,158 @@
                     <label>$ADDON[script.tvguide.fullscreen 30308]</label>
                 </control>
             </control>
+
+<!--            # Help Marker Invisible Buttons PopupMenu # -->
+            <control type="group">
+                <description>Buttons Help PopupMenu</description>
+                <posx></posx>
+                <posy></posy>
+                <width>1280</width>
+                <height>720</height>
+                <visible>!Control.IsVisible(4323)</visible>
+
+                <control type="image">
+                    <description>close PopupMenu</description>
+                    <posx>-100</posx>
+                    <posy>-28</posy>
+                    <width>1280</width>
+                    <height>720</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>close PopupMenu</description>
+                    <posx>-100</posx>
+                    <posy>-28</posy>
+                    <width>1280</width>
+                    <height>720</height>
+                    <label>CLOSE POPUPMENU / BACK</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>play BIG</description>
+                    <posx>30</posx>
+                    <posy>0</posy>
+                    <width>690</width>
+                    <height>105</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>play BIG</description>
+                    <posx>30</posx>
+                    <posy>0</posy>
+                    <width>690</width>
+                    <height>106</height>
+                    <label>PLAY</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>channel up BIG</description>
+                    <posx>30</posx>
+                    <posy>106</posy>
+                    <width>690</width>
+                    <height>109</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>channel up BIG</description>
+                    <posx>30</posx>
+                    <posy>106</posy>
+                    <width>690</width>
+                    <height>110</height>
+                    <label>CHANNEL UP</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>channel down BIG</description>
+                    <posx>30</posx>
+                    <posy>407</posy>
+                    <width>690</width>
+                    <height>109</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>channel down BIG</description>
+                    <posx>30</posx>
+                    <posy>406</posy>
+                    <width>690</width>
+                    <height>110</height>
+                    <label>CHANNEL DOWN</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>Program previous BIG</description>
+                    <posx>30</posx>
+                    <posy>216</posy>
+                    <width>220</width>
+                    <height>190</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>Program previous BIG</description>
+                    <posx>30</posx>
+                    <posy>216</posy>
+                    <width>220</width>
+                    <height>190</height>
+                    <label>PREVIOUS PROGRAM</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>Program now BIG</description>
+                    <posx>251</posx>
+                    <posy>216</posy>
+                    <width>248</width>
+                    <height>190</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>Program now BIG</description>
+                    <posx>250</posx>
+                    <posy>216</posy>
+                    <width>250</width>
+                    <height>190</height>
+                    <label>NOW</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>Program next BIG</description>
+                    <posx>500</posx>
+                    <posy>216</posy>
+                    <width>220</width>
+                    <height>190</height> 
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>Program next BIG</description>
+                    <posx>500</posx>
+                    <posy>216</posy>
+                    <width>220</width>
+                    <height>190</height> 
+                    <label>NEXT PROGRAM</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+            </control>
+
         </control>
 
 <!--         # Popup Setup # -->

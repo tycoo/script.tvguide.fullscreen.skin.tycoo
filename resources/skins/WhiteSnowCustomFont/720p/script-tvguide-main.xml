@@ -144,6 +144,8 @@
             <animation time="200" effect="fade">Hidden</animation>
             <visible>Control.IsVisible(5000)|Control.IsVisible(5003)</visible>
         </control>
+
+<!--         # Invisible Buttons Video Window # -->
         <control type="button">
             <description>now</description>
             <posx>340</posx>
@@ -197,6 +199,117 @@
             <texturefocus></texturefocus>
             <texturenofocus></texturenofocus>
             <visible>Control.IsVisible(5000)+Control.IsVisible(10000)+Control.IsVisible(6000)</visible>
+        </control>
+
+<!--         # Help Marker Invisible Buttons Video Window # -->
+        <control type="group">
+            <description>Buttons Help Video Window</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <visible>Control.IsVisible(5000)+Control.IsVisible(10000)+Control.IsVisible(6000)+!Control.IsVisible(7000)+!Control.IsVisible(4323)</visible>
+
+            <control type="image">
+                <description>last played</description>
+                <posx>0</posx>
+                <posy>120</posy>
+                <width>340</width>
+                <height>320</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+            <control type="label">
+                <description>last played</description>
+                <posx>0</posx>
+                <posy>120</posy>
+                <width>340</width>
+                <height>320</height>
+                <label>LAST PLAYED</label>
+                <font>font15</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="image">
+                <description>now</description>
+                <posx>341</posx>
+                <posy>120</posy>
+                <width>598</width>
+                <height>320</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+            <control type="label">
+                <description>now</description>
+                <posx>340</posx>
+                <posy>120</posy>
+                <width>600</width>
+                <height>320</height>
+                <label>NOW</label>
+                <font>font15</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="image">
+                <description>back</description>
+                <posx>340r</posx>
+                <posy>120</posy>
+                <width>340</width>
+                <height>320</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+            <control type="label">
+                <description>back</description>
+                <posx>340r</posx>
+                <posy>120</posy>
+                <width>340</width>
+                <height>320</height>
+                <label>EPG BACK</label>
+                <font>font15</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="image">
+                <description>info osd</description>
+                <posx>0</posx>
+                <posy>279r</posy>
+                <width>1280</width>
+                <height>198</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+            <control type="label">
+                <description>info osd</description>
+                <posx>0</posx>
+                <posy>280r</posy>
+                <width>1280</width>
+                <height>200</height>
+                <label>OSD</label>
+                <font>font15</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="image">
+                <description>quick epg</description>
+                <posx>0</posx>
+                <posy>80r</posy>
+                <width>1280</width>
+                <height>80</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+            <control type="label">
+                <description>quick epg</description>
+                <posx>0</posx>
+                <posy>80r</posy>
+                <width>1280</width>
+                <height>80</height>
+                <label>QUICK EPG</label>
+                <font>font15</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
         </control>
 
 <!--         # Date and Time Box # -->
@@ -370,6 +483,77 @@
                 <texturefocus></texturefocus>
                 <texturenofocus></texturenofocus>
                 <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)]</visible>
+            </control>
+        </control>
+
+<!--         # Help Marker Invisible Control Button Boxes - Header # -->
+        <control type="group">
+            <description>Buttons Help Video Window</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)|Control.IsVisible(4323)]</visible>
+
+            <control type="image">
+                <description>first channel</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+            <control type="label">
+                <description>first channel</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <label>FIRST CHANNEL</label>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>        
+            <control type="image">
+                <description>next day</description>
+                <posx>100r</posx>
+                <posy>0</posy>
+                <width>100</width>
+                <height>40</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+            <control type="label">
+                <description>next day</description>
+                <posx>100r</posx>
+                <posy>0</posy>
+                <width>100</width>
+                <height>40</height>
+                <label>NEXT DAY</label>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control> 
+            <control type="image">
+                <description>previous day</description>
+                <posx>200r</posx>
+                <posy>0</posy>
+                <width>99</width>
+                <height>40</height>
+                <texture>tvguide-glasspane.png</texture>
+            </control>
+            <control type="label">
+                <description>previous day</description>
+                <posx>200r</posx>
+                <posy>0</posy>
+                <width>100</width>
+                <height>40</height>
+                <label>PREVIOUS DAY</label>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
             </control>
         </control>
 
@@ -1254,7 +1438,7 @@
                     <visible>true</visible>
                 </control>
 
-<!--                 # Invisible Control Button Boxes - Channels Column# -->
+<!--                 # Invisible Control Button Boxes - Channels Column # -->
                 <control type="button" id="44303">
                     <description>navigate up BIG</description>
                     <posx>0</posx>
@@ -1287,6 +1471,58 @@
                     <texturenofocus></texturenofocus>
                     <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)]</visible>
                 </control>
+
+<!--                 # Help Marker Invisible Buttons Boxes - Channels Column # -->
+                <control type="group">
+                    <description>Buttons Help Video Window</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>180</width>
+                    <height>414</height>
+                    <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)|Control.IsVisible(4323)]</visible>
+
+                    <control type="image">
+                        <description>navigate up BIG</description>
+                        <posx>0</posx>
+                        <posy>1</posy>
+                        <width>180</width>
+                        <height>206</height>
+                        <texture>tvguide-glasspane.png</texture>
+                    </control>
+                    <control type="label">
+                        <description>navigate up BIG</description>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>180</width>
+                        <height>207</height>
+                        <label>CHANNEL UP</label>
+                        <font>font15</font>
+                        <textcolor>white</textcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                    </control>
+                    <control type="image">
+                        <description>navigate down BIG</description>
+                        <posx>0</posx>
+                        <posy>208</posy>
+                        <width>180</width>
+                        <height>206</height>
+                        <texture>tvguide-glasspane.png</texture>
+                    </control>
+                    <control type="label">
+                        <description>navigate down BIG</description>
+                        <posx>0</posx>
+                        <posy>207</posy>
+                        <width>180</width>
+                        <height>207</height>
+                        <label>CHANNEL DOWN</label>
+                        <font>font15</font>
+                        <textcolor>white</textcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                    </control>
+                </control>
+
             </control>
         </control>
 
@@ -1486,7 +1722,7 @@
                 <animation effect="slide" start="0,0" end="-40,0" time="75" condition="Window.IsVisible(Mutebug)">conditional</animation>
             </control>
 
-<!--             # Control Buttons - Program # -->
+<!--             # Visible & Invisible Control Buttons - Program Box # -->
             <control type="group">
                 <visible>true</visible>
                 <posx>190</posx>
@@ -1500,7 +1736,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>275</width>
-                    <height>154</height>
+                    <height>142</height>
                     <label></label>
                     <font>font13</font>
                     <aligny>top</aligny>
@@ -1515,7 +1751,7 @@
                     <posx>275</posx>
                     <posy>0</posy>
                     <width>280</width>
-                    <height>154</height>
+                    <height>142</height>
                     <label></label>
                     <font>font13</font>
                     <aligny>top</aligny>
@@ -1530,7 +1766,7 @@
                     <posx>555</posx>
                     <posy>0</posy>
                     <width>275</width>
-                    <height>154</height>
+                    <height>142</height>
                     <label></label>
                     <font>font13</font>
                     <aligny>top</aligny>
@@ -1541,12 +1777,12 @@
                     <texturenofocus></texturenofocus>
                 </control>
                 <control type="label">
-                    <description>Show Menu Bar Button</description>
+                    <description>Show MenuBar Button</description>
                     <posx>890</posx>
                     <posy>176</posy>
                     <width>70</width>
                     <height>36</height>
-                    <label>MENU BAR</label>
+                    <label>MENUBAR</label>
                     <font>font11</font>
                     <aligny>center</aligny>
                     <align>left</align>
@@ -1554,12 +1790,12 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                  <control type="label">
-                    <description>Show Menu Bar Button Focus</description>
+                    <description>Show MenuBar Button Focus</description>
                     <posx>890</posx>
                     <posy>176</posy>
                     <width>70</width>
                     <height>36</height>
-                    <label>MENU BAR</label>
+                    <label>MENUBAR</label>
                     <font>font11</font>
                     <aligny>center</aligny>
                     <align>left</align>
@@ -1567,7 +1803,7 @@
                     <visible>Control.HasFocus(5201)</visible>
                 </control>
                 <control type="button" id="5201">
-                    <description>Invisible Show Menu Bar Button</description>
+                    <description>Invisible Show MenuBar Button</description>
                     <posx>-190</posx>
                     <posy>80r</posy>
                     <width>1280</width>
@@ -1583,11 +1819,11 @@
                     <visible>true</visible>
                 </control>
                 <control type="button" id="55202">
-                    <description>Invisible Close Menu Bar Button</description>
+                    <description>Invisible Close MenuBar Button</description>
                     <posx>-190</posx>
-                    <posy>-458</posy>
+                    <posy>0</posy>
                     <width>1280</width>
-                    <height>600</height>
+                    <height>142</height>
                     <label></label>
                     <font></font>
                     <aligny>center</aligny>
@@ -1642,7 +1878,174 @@
                     <texturefocus>buttons/button_powerFO1.png</texturefocus>
                     <texturenofocus>buttons/button_powerFO.png</texturenofocus>
                 </control>
+                <control type="button" id="4324">
+                    <description>main mouse help button / invisible buttons help button</description>
+                    <posx>888</posx>
+                    <posy>15</posy>
+                    <width>28</width>
+                    <height>28</height>
+                    <label></label>
+                    <font>font13</font>
+                    <textcolor>grey</textcolor>
+                    <focusedcolor>black</focusedcolor>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texturefocus>buttons/button_helpFO.png</texturefocus>
+                    <texturenofocus>buttons/button_help.png</texturenofocus>
+                    <visible>Control.IsEnabled(4324)</visible>
+                </control>
+                <control type="label" id="4323">
+                    <description>main mouse help control / visibility marker invisible buttons help</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>40</width>
+                    <height>40</height>
+                </control>
+                <control type="image">
+                    <description>help / question mark info</description>
+                    <posx>180</posx>
+                    <posy>-283</posy>
+                    <width>500</width>
+                    <height>60</height>
+                    <texture aspectratio="stretch">tvguide-glasspane.png</texture>
+                    <visible>!Control.IsVisible(4323)</visible>
+                </control>
+                <control type="label">
+                    <description>help / question mark info</description>
+                    <posx>180</posx>
+                    <posy>-283</posy>
+                    <width>500</width>
+                    <height>60</height>
+                    <label>Invisible Control Buttons -[CR]Info: Question Mark ? can be disabled in settings[CR]</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <visible>!Control.IsVisible(4323)</visible>
+                </control>
             </control>
+
+<!--             # Help Marker Invisible Control Button Boxes - Program Box # -->
+            <control type="group">
+                <description>Buttons Help Marker Program Box</description>
+                <posx>190</posx>
+                <posy>40</posy>
+                <width>830</width>
+                <height>222</height>
+                <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)|Control.IsVisible(4323)]+Control.IsVisible(4200)</visible>
+
+                <control type="image">
+                    <description>close MenuBar</description>
+                    <posx>-190</posx>
+                    <posy>0</posy>
+                    <width>1280</width>
+                    <height>142</height>
+                    <texture>tvguide-glasspane.png</texture>
+                    <visible>!Control.IsVisible(5200)</visible>
+                </control>
+                <control type="label">
+                    <description>close MenuBar</description>
+                    <posx>-190</posx>
+                    <posy>0</posy>
+                    <width>1280</width>
+                    <height>142</height>
+                    <label>CLOSE MENUBAR</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <texture>tvguide-glasspane.png</texture>
+                    <visible>!Control.IsVisible(5200)</visible>
+                </control>
+                <control type="image">
+                    <description>navigate left BIG</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>274</width>
+                    <height>141</height>
+                    <texture>tvguide-glasspane.png</texture>
+                    <visible>Control.IsVisible(5200)</visible>
+                </control>
+                <control type="label">
+                    <description>navigate left BIG</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>275</width>
+                    <height>142</height>
+                    <label>LEFT</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <visible>Control.IsVisible(5200)</visible>
+                </control>
+                <control type="image">
+                    <description>navigate to now BIG</description>
+                    <posx>275</posx>
+                    <posy>0</posy>
+                    <width>280</width>
+                    <height>141</height>
+                    <texture>tvguide-glasspane.png</texture>
+                    <visible>Control.IsVisible(5200)</visible>
+                </control>
+                <control type="label">
+                    <description>navigate to now BIG</description>
+                    <posx>275</posx>
+                    <posy>0</posy>
+                    <width>280</width>
+                    <height>142</height>
+                    <label>NOW</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <visible>Control.IsVisible(5200)</visible>
+                </control>
+                <control type="image">
+                    <description>navigate right BIG</description>
+                    <posx>556</posx>
+                    <posy>0</posy>
+                    <width>275</width>
+                    <height>141</height>
+                    <texture>tvguide-glasspane.png</texture>
+                    <visible>Control.IsVisible(5200)</visible>
+                </control>
+                <control type="label">
+                    <description>navigate right BIG</description>
+                    <posx>556</posx>
+                    <posy>0</posy>
+                    <width>275</width>
+                    <height>142</height>
+                    <label>RIGHT</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <visible>Control.IsVisible(5200)</visible>
+                </control>
+                <control type="image">
+                    <description>show MenuBar</description>
+                    <posx>-190</posx>
+                    <posy>80r</posy>
+                    <width>1280</width>
+                    <height>80</height>
+                    <texture>tvguide-glasspane.png</texture>
+                    <visible>Control.IsVisible(5200)</visible>
+                </control>
+                <control type="label">
+                    <description>show MenuBar</description>
+                    <posx>-190</posx>
+                    <posy>80r</posy>
+                    <width>1280</width>
+                    <height>80</height>
+                    <label>SHOW MENUBAR</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <visible>Control.IsVisible(5200)</visible>
+                </control>
+             </control>
 
 <!--             # Program Image Box / PIP # -->
             <control type="group">
@@ -1878,9 +2281,9 @@
             </control>
         </control>
 
-<!--             # Menu Bar Bottom Box # -->
+<!--             # MenuBar Bottom Box # -->
         <control type="label" id="5200">
-            <description>visibility marker for Menu Bar</description>
+            <description>visibility marker for MenuBar</description>
             <posx>0</posx>
             <posy>0</posy>
             <width>40</width>
@@ -1888,7 +2291,7 @@
         </control>
 
         <control type="group">
-            <description>Menu Bar Bottom</description>
+            <description>MenuBar Bottom</description>
             <posx>0</posx>
             <posy>54r</posy>
             <width>1280</width>
@@ -2791,7 +3194,7 @@
                     <description>Epg</description>
                     <posx>346r</posx>
                     <posy>-433</posy>
-                    <width>340</width>
+                    <width>342</width>
                     <height>320</height>
                     <texturefocus></texturefocus>
                     <texturenofocus></texturenofocus>
@@ -2981,6 +3384,198 @@
                 <texturefocus>buttons/Button yellowFO.png</texturefocus>
                 <texturenofocus>buttons/Button yellow.png</texturenofocus>
             </control>
+
+<!--             # Help Marker Invisible Buttons OSD # -->
+            <control type="group">
+                <description>Buttons Help Video Window</description>
+                <posx>6</posx>
+                <posy>1</posy>
+                <width>1278</width>
+                <height>157</height>
+                <visible>![Control.IsVisible(6300)|Control.IsVisible(4323)]</visible>
+
+                <control type="image">
+                    <description>last played</description>
+                    <posx>-6</posx>
+                    <posy>-433</posy>
+                    <width>340</width>
+                    <height>320</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>last played</description>
+                    <posx>-6</posx>
+                    <posy>-433</posy>
+                    <width>340</width>
+                    <height>320</height>
+                    <label>LAST PLAYED</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>now</description>
+                    <posx>335</posx>
+                    <posy>-433</posy>
+                    <width>598</width>
+                    <height>320</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>now</description>
+                    <posx>335</posx>
+                    <posy>-433</posy>
+                    <width>598</width>
+                    <height>320</height>
+                    <label>NOW</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>epg</description>
+                    <posx>344r</posx>
+                    <posy>-433</posy>
+                    <width>341</width>
+                    <height>320</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>epg</description>
+                    <posx>344r</posx>
+                    <posy>-433</posy>
+                    <width>340</width>
+                    <height>320</height>
+                    <label>EPG BACK</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>close osd</description>
+                    <posx>-6</posx>
+                    <posy>-112</posy>
+                    <width>1280</width>
+                    <height>279</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>close osd</description>
+                    <posx>-6</posx>
+                    <posy>-113</posy>
+                    <width>1280</width>
+                    <height>280</height>
+                    <label>CLOSE OSD</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>up</description>
+                    <posx>0</posx>
+                    <posy>1</posy>
+                    <width>170</width>
+                    <height>78</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>up</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>170</width>
+                    <height>78</height>
+                    <label>CHANNEL UP</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>down</description>
+                    <posx>0</posx>
+                    <posy>80</posy>
+                    <width>170</width>
+                    <height>76</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>down</description>
+                    <posx>0</posx>
+                    <posy>78</posy>
+                    <width>170</width>
+                    <height>78</height>
+                    <label>CHANNEL DOWN</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>play</description>
+                    <posx>312</posx>
+                    <posy>12</posy>
+                    <width>620</width>
+                    <height>23</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>play</description>
+                    <posx>312</posx>
+                    <posy>12</posy>
+                    <width>620</width>
+                    <height>23</height>
+                    <label>PLAY</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>left</description>
+                    <posx>312</posx>
+                    <posy>43</posy>
+                    <width>309</width>
+                    <height>70</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>left</description>
+                    <posx>312</posx>
+                    <posy>43</posy>
+                    <width>310</width>
+                    <height>70</height>
+                    <label>LEFT</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>right</description>
+                    <posx>622</posx>
+                    <posy>43</posy>
+                    <width>310</width>
+                    <height>70</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>right</description>
+                    <posx>622</posx>
+                    <posy>43</posy>
+                    <width>310</width>
+                    <height>70</height>
+                    <label>RIGHT</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+            </control>
+
         </control>
 
 <!--         # Last Channel popup # -->
@@ -4421,6 +5016,158 @@
                     <texturenofocus></texturenofocus>
                 </control>
             </control>
+
+<!--            # Help Marker Invisible Buttons Quick Epg # -->
+            <control type="group">
+                <description>Buttons Help Video Window</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1280</width>
+                <height>720</height>
+                <visible>!Control.IsVisible(4323)</visible>
+
+                <control type="image">
+                    <description>close quick epg</description>
+                    <posx>0</posx>
+                    <posy>-600</posy>
+                    <width>1280</width>
+                    <height>439</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>close quick epg</description>
+                    <posx>0</posx>
+                    <posy>-600</posy>
+                    <width>1280</width>
+                    <height>440</height>
+                    <label>CLOSE QUICKEPG</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>quick epg info</description>
+                    <posx>0</posx>
+                    <posy>-160</posy>
+                    <width>1280</width>
+                    <height>129</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>quick epg info</description>
+                    <posx>0</posx>
+                    <posy>-160</posy>
+                    <width>1280</width>
+                    <height>130</height>
+                    <label>PROGRAM INFO TOGGLE</label>
+                    <font>font15</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>left</description>
+                    <posx>180</posx>
+                    <posy>-30</posy>
+                    <width>549</width>
+                    <height>30</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>left</description>
+                    <posx>180</posx>
+                    <posy>-30</posy>
+                    <width>550</width>
+                    <height>30</height>
+                    <label>LEFT</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>right</description>
+                    <posx>730</posx>
+                    <posy>-30</posy>
+                    <width>550</width>
+                    <height>30</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>right</description>
+                    <posx>730</posx>
+                    <posy>-30</posy>
+                    <width>550</width>
+                    <height>30</height>
+                    <label>RIGHT</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>first channel</description>
+                    <posx>0</posx>
+                    <posy>-30</posy>
+                    <width>179</width>
+                    <height>30</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>first channel</description>
+                    <posx>0</posx>
+                    <posy>-30</posy>
+                    <width>180</width>
+                    <height>30</height>
+                    <label>FIRST CHANNEL</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>channel up</description>
+                    <posx>0</posx>
+                    <posy>1</posy>
+                    <width>180</width>
+                    <height>59</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>channel up</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>180</width>
+                    <height>60</height>
+                    <label>CHANNEL UP</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <description>channel down</description>
+                    <posx>0</posx>
+                    <posy>61</posy>
+                    <width>180</width>
+                    <height>59</height>
+                    <texture>tvguide-glasspane.png</texture>
+                </control>
+                <control type="label">
+                    <description>channel down</description>
+                    <posx>0</posx>
+                    <posy>60</posy>
+                    <width>180</width>
+                    <height>60</height>
+                    <label>CHANNEL DOWN</label>
+                    <font>font13</font>
+                    <textcolor>white</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+            </control>
+
         </control>
 
         <control type="label" id="9999">
