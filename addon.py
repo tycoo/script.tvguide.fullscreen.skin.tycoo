@@ -23,6 +23,7 @@ if skin > -1:
         else:
             tvgf.setSetting('epg.font', 'font13')
         tvgf.setSetting('epg.nofocus.color', '[COLOR ff696969]dimgrey[/COLOR]')
+        tvgf.setSetting('help.invisiblebuttons', 'true')
         tvgf.setSetting('last.channel.popup', '1')
         tvgf.setSetting('program.background.flat', 'false')
         tvgf.setSetting('program.background.color', '[COLOR fffffafa]snow[/COLOR]')
