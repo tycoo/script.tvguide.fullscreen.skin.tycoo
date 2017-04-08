@@ -649,13 +649,16 @@
             </control>
 
 <!--            # Help Marker Invisible Buttons PopupMenu # -->
+            <control type="label" id="44510">
+                <description>popup mouse help control / visibility marker invisible buttons help</description>
+            </control>
             <control type="group">
                 <description>Buttons Help PopupMenu</description>
                 <posx></posx>
                 <posy></posy>
                 <width>1280</width>
                 <height>720</height>
-                <visible>!Control.IsVisible(4323)</visible>
+                <visible>!Control.IsVisible(44510)</visible>
 
                 <control type="image">
                     <description>close PopupMenu</description>
@@ -663,7 +666,7 @@
                     <posy>-28</posy>
                     <width>1280</width>
                     <height>720</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>close PopupMenu</description>
@@ -683,7 +686,7 @@
                     <posy>0</posy>
                     <width>690</width>
                     <height>105</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>play BIG</description>
@@ -703,7 +706,7 @@
                     <posy>106</posy>
                     <width>690</width>
                     <height>109</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>channel up BIG</description>
@@ -723,7 +726,7 @@
                     <posy>407</posy>
                     <width>690</width>
                     <height>109</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>channel down BIG</description>
@@ -743,7 +746,7 @@
                     <posy>216</posy>
                     <width>220</width>
                     <height>190</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>Program previous BIG</description>
@@ -763,7 +766,7 @@
                     <posy>216</posy>
                     <width>248</width>
                     <height>190</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>Program now BIG</description>
@@ -783,7 +786,7 @@
                     <posy>216</posy>
                     <width>220</width>
                     <height>190</height> 
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>Program next BIG</description>
