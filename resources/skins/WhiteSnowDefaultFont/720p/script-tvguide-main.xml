@@ -216,7 +216,7 @@
                 <posy>120</posy>
                 <width>340</width>
                 <height>320</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
             </control>
             <control type="label">
                 <description>last played</description>
@@ -236,7 +236,7 @@
                 <posy>120</posy>
                 <width>598</width>
                 <height>320</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
             </control>
             <control type="label">
                 <description>now</description>
@@ -256,7 +256,7 @@
                 <posy>120</posy>
                 <width>340</width>
                 <height>320</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
             </control>
             <control type="label">
                 <description>back</description>
@@ -276,7 +276,7 @@
                 <posy>279r</posy>
                 <width>1280</width>
                 <height>198</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
             </control>
             <control type="label">
                 <description>info osd</description>
@@ -296,7 +296,7 @@
                 <posy>80r</posy>
                 <width>1280</width>
                 <height>80</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
             </control>
             <control type="label">
                 <description>quick epg</description>
@@ -501,7 +501,7 @@
                 <posy>0</posy>
                 <width>180</width>
                 <height>40</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
             </control>
             <control type="label">
                 <description>first channel</description>
@@ -521,7 +521,7 @@
                 <posy>0</posy>
                 <width>100</width>
                 <height>40</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
             </control>
             <control type="label">
                 <description>next day</description>
@@ -541,7 +541,7 @@
                 <posy>0</posy>
                 <width>99</width>
                 <height>40</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
             </control>
             <control type="label">
                 <description>previous day</description>
@@ -1487,7 +1487,7 @@
                         <posy>1</posy>
                         <width>180</width>
                         <height>206</height>
-                        <texture>tvguide-glasspane.png</texture>
+                        <texture>help_marker.png</texture>
                     </control>
                     <control type="label">
                         <description>navigate up BIG</description>
@@ -1507,7 +1507,7 @@
                         <posy>208</posy>
                         <width>180</width>
                         <height>206</height>
-                        <texture>tvguide-glasspane.png</texture>
+                        <texture>help_marker.png</texture>
                     </control>
                     <control type="label">
                         <description>navigate down BIG</description>
@@ -1776,30 +1776,25 @@
                     <texturefocus></texturefocus>
                     <texturenofocus></texturenofocus>
                 </control>
-                <control type="label">
+                <control type="image">
                     <description>Show MenuBar Button</description>
-                    <posx>890</posx>
-                    <posy>176</posy>
-                    <width>70</width>
-                    <height>36</height>
-                    <label>MENUBAR</label>
-                    <font>font11</font>
+                    <posx>930</posx>
+                    <posy>180</posy>
+                    <width>28</width>
+                    <height>28</height>
+                    <texture>buttons/button_quickepginfo.png</texture>
                     <aligny>center</aligny>
-                    <align>left</align>
-                    <textcolor>grey</textcolor>
-                    <aspectratio>keep</aspectratio>
+                    <align>center</align>
                 </control>
-                 <control type="label">
+                <control type="image">
                     <description>Show MenuBar Button Focus</description>
-                    <posx>890</posx>
-                    <posy>176</posy>
-                    <width>70</width>
-                    <height>36</height>
-                    <label>MENUBAR</label>
-                    <font>font11</font>
+                    <posx>930</posx>
+                    <posy>180</posy>
+                    <width>28</width>
+                    <height>28</height>
+                    <texture>buttons/button_quickepginfoFO.png</texture>
                     <aligny>center</aligny>
-                    <align>left</align>
-                    <textcolor>ff808080</textcolor>
+                    <align>center</align>
                     <visible>Control.HasFocus(5201)</visible>
                 </control>
                 <control type="button" id="5201">
@@ -1836,7 +1831,7 @@
                 </control>
                 <control type="button">
                     <description>Stop button by videowindow</description>
-                    <posx>830</posx>
+                    <posx>810</posx>
                     <posy>180</posy>
                     <width>28</width>
                     <height>28</height>
@@ -1892,7 +1887,6 @@
                     <align>center</align>
                     <texturefocus>buttons/button_helpFO.png</texturefocus>
                     <texturenofocus>buttons/button_help.png</texturenofocus>
-                    <visible>Control.IsEnabled(4324)</visible>
                 </control>
                 <control type="label" id="4323">
                     <description>main mouse help control / visibility marker invisible buttons help</description>
@@ -1903,20 +1897,20 @@
                 </control>
                 <control type="image">
                     <description>help / question mark info</description>
-                    <posx>180</posx>
+                    <posx>110</posx>
                     <posy>-283</posy>
-                    <width>500</width>
+                    <width>640</width>
                     <height>60</height>
-                    <texture aspectratio="stretch">tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                     <visible>!Control.IsVisible(4323)</visible>
                 </control>
                 <control type="label">
                     <description>help / question mark info</description>
-                    <posx>180</posx>
+                    <posx>110</posx>
                     <posy>-283</posy>
-                    <width>500</width>
+                    <width>640</width>
                     <height>60</height>
-                    <label>Invisible Control Buttons -[CR]Info: Question Mark ? can be disabled in settings[CR]</label>
+                    <label>Invisible Control Buttons -[CR]Info: Can be disabled in settings or toggled by ? Question Mark</label>
                     <font>font15</font>
                     <textcolor>white</textcolor>
                     <aligny>center</aligny>
@@ -1940,7 +1934,7 @@
                     <posy>0</posy>
                     <width>1280</width>
                     <height>142</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                     <visible>!Control.IsVisible(5200)</visible>
                 </control>
                 <control type="label">
@@ -1954,7 +1948,7 @@
                     <textcolor>white</textcolor>
                     <aligny>center</aligny>
                     <align>center</align>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                     <visible>!Control.IsVisible(5200)</visible>
                 </control>
                 <control type="image">
@@ -1963,7 +1957,7 @@
                     <posy>0</posy>
                     <width>274</width>
                     <height>141</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                     <visible>Control.IsVisible(5200)</visible>
                 </control>
                 <control type="label">
@@ -1985,7 +1979,7 @@
                     <posy>0</posy>
                     <width>280</width>
                     <height>141</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                     <visible>Control.IsVisible(5200)</visible>
                 </control>
                 <control type="label">
@@ -2007,7 +2001,7 @@
                     <posy>0</posy>
                     <width>275</width>
                     <height>141</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                     <visible>Control.IsVisible(5200)</visible>
                 </control>
                 <control type="label">
@@ -2029,7 +2023,7 @@
                     <posy>80r</posy>
                     <width>1280</width>
                     <height>80</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                     <visible>Control.IsVisible(5200)</visible>
                 </control>
                 <control type="label">
@@ -2220,7 +2214,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>70</height>
-                <texture>tvguide-glasspane.png</texture>
+                <texture>help_marker.png</texture>
                 <visible>false</visible>
             </control>
             <control type="label">
@@ -3400,7 +3394,7 @@
                     <posy>-433</posy>
                     <width>340</width>
                     <height>320</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>last played</description>
@@ -3420,7 +3414,7 @@
                     <posy>-433</posy>
                     <width>598</width>
                     <height>320</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>now</description>
@@ -3440,7 +3434,7 @@
                     <posy>-433</posy>
                     <width>341</width>
                     <height>320</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>epg</description>
@@ -3460,7 +3454,7 @@
                     <posy>-112</posy>
                     <width>1280</width>
                     <height>279</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>close osd</description>
@@ -3480,7 +3474,7 @@
                     <posy>1</posy>
                     <width>170</width>
                     <height>78</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>up</description>
@@ -3500,7 +3494,7 @@
                     <posy>80</posy>
                     <width>170</width>
                     <height>76</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>down</description>
@@ -3520,7 +3514,7 @@
                     <posy>12</posy>
                     <width>620</width>
                     <height>23</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>play</description>
@@ -3540,7 +3534,7 @@
                     <posy>43</posy>
                     <width>309</width>
                     <height>70</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>left</description>
@@ -3560,7 +3554,7 @@
                     <posy>43</posy>
                     <width>310</width>
                     <height>70</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>right</description>
@@ -5032,7 +5026,7 @@
                     <posy>-600</posy>
                     <width>1280</width>
                     <height>439</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>close quick epg</description>
@@ -5052,7 +5046,7 @@
                     <posy>-160</posy>
                     <width>1280</width>
                     <height>129</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>quick epg info</description>
@@ -5072,7 +5066,7 @@
                     <posy>-30</posy>
                     <width>549</width>
                     <height>30</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>left</description>
@@ -5092,7 +5086,7 @@
                     <posy>-30</posy>
                     <width>550</width>
                     <height>30</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>right</description>
@@ -5112,7 +5106,7 @@
                     <posy>-30</posy>
                     <width>179</width>
                     <height>30</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>first channel</description>
@@ -5132,7 +5126,7 @@
                     <posy>1</posy>
                     <width>180</width>
                     <height>59</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>channel up</description>
@@ -5152,7 +5146,7 @@
                     <posy>61</posy>
                     <width>180</width>
                     <height>59</height>
-                    <texture>tvguide-glasspane.png</texture>
+                    <texture>help_marker.png</texture>
                 </control>
                 <control type="label">
                     <description>channel down</description>

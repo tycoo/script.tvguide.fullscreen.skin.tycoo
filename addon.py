@@ -24,7 +24,6 @@ if skin > -1:
             tvgf.setSetting('epg.font', 'font13')
         tvgf.setSetting('epg.nofocus.color', '[COLOR ff696969]dimgrey[/COLOR]')
         tvgf.setSetting('last.channel.popup', '1')
-        tvgf.setSetting('help.invisiblebuttons', 'true')
         tvgf.setSetting('program.background.flat', 'false')
         tvgf.setSetting('program.background.color', '[COLOR fffffafa]snow[/COLOR]')
         tvgf.setSetting('program.background.image', 'special://home/addons/script.tvguide.fullscreen.skin.tycoo/resources/skins/WhiteSnowCustomFont/media/white_snow.png')
