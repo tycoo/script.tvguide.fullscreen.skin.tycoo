@@ -2977,35 +2977,35 @@
                     <description>Video AspectRatio Image</description>
                     <width>40</width>
                     <height>25</height>
-                    <texture>$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.VideoAspect,codecflags/aspectratio/,.png]</texture>
                     <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="image">
                     <description>Video Resolution Image</description>
                     <width>40</width>
                     <height>25</height>        
-                    <texture>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.VideoResolution,codecflags/videoresolution/,.png]</texture>
                     <visible>!Player.ChannelPreviewActive</visible>
                </control>
                 <control type="image">
                     <description>Video VideoCodec Image</description>
                     <width>40</width>
                     <height>25</height>
-                    <texture>$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.VideoCodec,codecflags/videocodec/,.png]</texture>
                     <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="image">
                     <description>Audio Channels Image</description>
                     <width>40</width>
                     <height>25</height>
-                    <texture>$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.AudioChannels,codecflags/audiochannel/,.png]</texture>
                     <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="image">
                     <description>Audio Codec Image</description>
                     <width>40</width>
                     <height>25</height>  
-                    <texture>$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.AudioCodec,codecflags/audiocodec/,.png]</texture>
                 </control>
             </control>
             <control type="label" id="6013">
@@ -3722,35 +3722,35 @@
                     <description>Video AspectRatio Image</description>
                     <width>55</width>
                     <height>35</height>
-                    <texture>$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.VideoAspect,codecflags/aspectratio/,.png]</texture>
                     <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="image">
                     <description>Video Resolution Image</description>
                     <width>55</width>
                     <height>35</height>
-                    <texture>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.VideoResolution,codecflags/videoresolution/,.png]</texture>
                     <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="image">
                     <description>Video VideoCodec Image</description>
                     <width>55</width>
                     <height>35</height>
-                    <texture>$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.VideoCodec,codecflags/videocodec/,.png]</texture>
                     <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="image">
                     <description>Audio Channels Image</description>
                     <width>55</width>
                     <height>35</height>
-                    <texture>$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.AudioChannels,codecflags/audiochannel/,.png]</texture>
                     <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="image">
                     <description>Audio Codec Image</description>
                     <width>55</width>
                     <height>35</height>
-                    <texture>$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.AudioCodec,codecflags/audiocodec/,.png]</texture>
                 </control>
             </control>
 
