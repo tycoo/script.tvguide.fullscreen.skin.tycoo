@@ -208,7 +208,7 @@
             <posy>0</posy>
             <width>1280</width>
             <height>720</height>
-            <visible>Control.IsVisible(5000)+Control.IsVisible(10000)+Control.IsVisible(6000)+!Control.IsVisible(7000)+!Control.IsVisible(4323)</visible>
+            <visible>Control.IsVisible(5000)+Control.IsVisible(10000)+Control.IsVisible(6000)+!Control.IsVisible(7000)+Control.IsVisible(4323)</visible>
 
             <control type="image">
                 <description>last played</description>
@@ -493,7 +493,7 @@
             <posy>0</posy>
             <width>1280</width>
             <height>720</height>
-            <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)|Control.IsVisible(4323)]</visible>
+            <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)]+Control.IsVisible(4323)</visible>
 
             <control type="image">
                 <description>first channel</description>
@@ -1479,7 +1479,7 @@
                     <posy>0</posy>
                     <width>180</width>
                     <height>414</height>
-                    <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)|Control.IsVisible(4323)]</visible>
+                    <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)]+Control.IsVisible(4323)</visible>
 
                     <control type="image">
                         <description>navigate up BIG</description>
@@ -1875,8 +1875,8 @@
                 </control>
                 <control type="button" id="4324">
                     <description>main mouse help button / invisible buttons help button</description>
-                    <posx>888</posx>
-                    <posy>15</posy>
+                    <posx>870</posx>
+                    <posy>180</posy>
                     <width>28</width>
                     <height>28</height>
                     <label></label>
@@ -1902,7 +1902,7 @@
                     <width>640</width>
                     <height>60</height>
                     <texture>help_marker.png</texture>
-                    <visible>!Control.IsVisible(4323)</visible>
+                    <visible>Control.IsVisible(4323)</visible>
                 </control>
                 <control type="label">
                     <description>help / question mark info</description>
@@ -1915,7 +1915,7 @@
                     <textcolor>white</textcolor>
                     <aligny>center</aligny>
                     <align>center</align>
-                    <visible>!Control.IsVisible(4323)</visible>
+                    <visible>Control.IsVisible(4323)</visible>
                 </control>
             </control>
 
@@ -1926,7 +1926,7 @@
                 <posy>40</posy>
                 <width>830</width>
                 <height>222</height>
-                <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)|Control.IsVisible(4323)]+Control.IsVisible(4200)</visible>
+                <visible>![Control.IsVisible(4300)|Control.IsVisible(5000)]+Control.IsVisible(4323)+Control.IsVisible(4200)</visible>
 
                 <control type="image">
                     <description>close MenuBar</description>
@@ -3386,7 +3386,7 @@
                 <posy>1</posy>
                 <width>1278</width>
                 <height>157</height>
-                <visible>![Control.IsVisible(6300)|Control.IsVisible(4323)]</visible>
+                <visible>!Control.IsVisible(6300)+Control.IsVisible(4323)</visible>
 
                 <control type="image">
                     <description>last played</description>
@@ -5018,7 +5018,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <visible>!Control.IsVisible(4323)</visible>
+                <visible>Control.IsVisible(4323)</visible>
 
                 <control type="image">
                     <description>close quick epg</description>
