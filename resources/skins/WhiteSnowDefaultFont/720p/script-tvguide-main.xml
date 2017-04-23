@@ -13,6 +13,14 @@
             <posy>-10000</posy>
             <width>1</width>
             <height>1</height>
+            <texture>tvgf-timebar.png</texture>
+        </control>
+        <control type="image">
+            <description>workaround for texture not being loaded</description>
+            <posx>-10000</posx>
+            <posy>-10000</posy>
+            <width>1</width>
+            <height>1</height>
             <texture>tvg-program-focus.png</texture>
         </control>
         <control type="image">
@@ -581,7 +589,7 @@
         <control type="group">
             <description>TV Guide group</description>
             <posx>0</posx>
-            <posy>40</posy>
+            <posy>0</posy>
             <width>1280</width>
             <height>720</height>
             <visible>!Control.IsVisible(5000)</visible>
@@ -597,7 +605,7 @@
             <control type="image">
                 <description>epg background during video playback</description>
                 <posx>0</posx>
-                <posy>-1</posy>
+                <posy>39</posy>
                 <width>1280</width>
                 <height>417</height>
                 <texture>whitetrans75.png</texture>
@@ -608,10 +616,10 @@
             <control type="image" id="4100">
                 <description>time bar</description>
                 <posx>180</posx>
-                <posy>0</posy>
-                <width>37</width>
+                <posy>40</posy>
+                <width>-6</width>
                 <height>448</height>
-                <texture colordiffuse="white">timeline_slider_grey55_446.png</texture>
+                <texture colordiffuse="white">timebar_slider_grey55_446_new.png</texture>
                 <visible>Control.IsVisible(4200)</visible>
             </control>
 
@@ -625,10 +633,10 @@
                 <visible>false</visible>
             </control>
 
-            # Channels Column #
+<!--             # Channels Column # -->
             <control type="group">
                 <posx>0</posx>
-                <posy>0</posy>
+                <posy>40</posy>
                 <width>180</width>
                 <height>640</height>
                 <visible>true</visible>
@@ -3647,7 +3655,7 @@
                 <width>180</width>
                 <height>40</height>
                 <textcolor>black</textcolor>
-                <font>font15_bold</font>5
+                <font>font15_bold</font>
                 <align>left</align>
                 <visible>StringCompare(Control.GetLabel(8004),)</visible>
             </control>
@@ -4297,9 +4305,9 @@
                 <description>time bar</description>
                 <posx>180</posx>
                 <posy>0</posy>
-                <width>-2</width>
+                <width>-3</width>
                 <height>116</height>
-                <texture>white_snow.png</texture>
+                <texture colordiffuse="grey">timebar_slider_grey55_446_new.png</texture>
             </control>
 
             <control type="image">
